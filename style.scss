@@ -76,11 +76,14 @@
 /* Two PART HEADER======(content)========*/
 
 .header {
+    overflow: hidden;
 
     &__content {
+        display: flex;
     }
 
     &__description {
+        max-width: 480px;
     }
 
     &__example {
@@ -89,31 +92,121 @@
 .title {
 
     &__description {
+        font-size: 40px;
+        font-weight: bold;
+
+        line-height: 1.2;
+        color: #f0f6ff;
+
+        margin-bottom: 20px;
     }
 }
 .text {
 
     &__description {
+        font-size: 14px;
+        line-height: 1.57;
+        color: #bdcadb;
+        margin-bottom: 48px;
     }
 
-    &__box {
-    }
+
 }
+
 .btn {
 
     &__description {
+        display: flex;
+        align-items: center;
+        max-width: 192px;
+        max-height: 48px;
+
+        background-image: linear-gradient(250deg, #0698f9 , #f906f9 );
+        border-radius: 12px;
     }
 
     &__text {
+        padding: 12px 24px;
+
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.33;
+
+        text-align: center;
+        color: #fff;
     }
 
     &__img {
+        background-color: #fafcff;
+        padding: 4px;
+        border-radius: 10px;
+
     }
 }
+
+/*PART TWO===========================*/
+.header{
+
+    &__example{
+        padding: 5px;
+
+
+        opacity: 1;
+
+        width: 250px;
+        height: 408px;
+
+        display: flex;
+        flex-direction: column;
+
+        transform: rotate(37.75deg);
+
+
+
+
+
+        background-image: linear-gradient(250deg, #0698f9 , #f906f9 );
+        border-radius: 12px;
+
+        position: relative;
+        z-index: 9;
+
+    }
+    &__example::after{
+        content: "";
+        opacity: 1;
+        display: block;
+        position: absolute;
+        bottom: -4px;
+        right: -4px;
+        width: 250px;
+        height: 408px;
+        background-image: linear-gradient(to left, #14a1ff , #f53df5 );
+        border-radius: 12px;
+        filter: blur(4px);
+        z-index: -1;
+    }
+
+
+}
+
 .img {
 
     &__box {
+
+      }
+
     }
+
+
+
+
+.text{
+    &__box{
+        color:#bdcadb;
+        text-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
 }
 .name {
 
@@ -121,9 +214,13 @@
     }
 }
 .collections {
+    color: #bdcadb;
 }
 .names {
+    color: #f0f6ff;
 }
+
+
 .price {
 
     &__flex {
