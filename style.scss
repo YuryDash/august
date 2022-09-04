@@ -76,14 +76,11 @@
 /* Two PART HEADER======(content)========*/
 
 .header {
-    color: #bdcadb;
 
     &__content {
-        display: flex;
     }
 
     &__description {
-        max-width: 480px;
     }
 
     &__example {
@@ -92,18 +89,11 @@
 .title {
 
     &__description {
-        font-size: 40px;
-        font-weight: bold;
-        
-        margin-bottom: 20px;
     }
 }
 .text {
 
     &__description {
-    }
-
-    &__btn {
     }
 
     &__box {
@@ -113,11 +103,14 @@
 
     &__description {
     }
+
+    &__text {
+    }
+
+    &__img {
+    }
 }
 .img {
-
-    &__btn {
-    }
 
     &__box {
     }
@@ -140,7 +133,7 @@
 }
 .offer {
 }
- 
+
 
 
 
