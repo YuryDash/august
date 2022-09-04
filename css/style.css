@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*PART TWO===========================*/
 .header__example {
-  padding: 5px;
+  margin-left: 250px;
   opacity: 1;
   width: 250px;
   height: 408px;
@@ -217,8 +217,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transform: rotate(37.75deg);
-          transform: rotate(37.75deg);
+  -webkit-transform: rotate(30.75deg) skew(-10deg);
+          transform: rotate(30.75deg) skew(-10deg);
   background-image: linear-gradient(250deg, #0698f9, #f906f9);
   border-radius: 12px;
   position: relative;
@@ -231,26 +231,113 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: absolute;
   bottom: -4px;
-  right: -4px;
+  right: -5px;
   width: 250px;
   height: 408px;
   background-image: -webkit-gradient(linear, right top, left top, from(#14a1ff), to(#f53df5));
   background-image: linear-gradient(to left, #14a1ff, #f53df5);
   border-radius: 12px;
-  -webkit-filter: blur(4px);
-          filter: blur(4px);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
   z-index: -1;
+  -webkit-box-shadow: 2px 2px 2px 2px black;
+          box-shadow: 2px 2px 2px 2px black;
+}
+
+.img__box img {
+  border-radius: 10px;
+  padding: 10px;
+  width: 250px;
+  height: 220px;
 }
 
 .text__box {
+  position: relative;
+  margin-top: 50px;
+  margin-left: -50px;
   color: #bdcadb;
   text-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.text__box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 130px;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#14a1ff), to(#f53df5));
+  background-image: linear-gradient(to left, #14a1ff, #f53df5);
+  opacity: 0.7;
+  z-index: -1;
+  -webkit-box-shadow: 2px 2px 2px 2px black;
+          box-shadow: 2px 2px 2px 2px black;
 }
 
 .collections {
+  margin-left: 10px;
   color: #bdcadb;
+  padding-bottom: 10px;
 }
 
 .names {
+  margin-left: 10px;
   color: #f0f6ff;
+  padding-bottom: 10px;
+}
+
+.price__flex {
+  margin-left: 10px;
+  margin-right: 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.inner {
+  padding: 15px 0px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.offer {
+  position: relative;
+}
+
+.offer::after {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo__one {
+  position: absolute;
+  display: block;
+  top: 50px;
+  left: -250px;
+}
+
+.logo__two {
+  position: absolute;
+  display: block;
+  top: -200px;
+  left: 300px;
+}
+
+.logo__three {
+  position: absolute;
+  display: block;
+  top: 50px;
+  left: 400px;
 }

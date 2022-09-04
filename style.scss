@@ -148,9 +148,9 @@
 .header{
 
     &__example{
-        padding: 5px;
 
 
+        margin-left: 250px;
         opacity: 1;
 
         width: 250px;
@@ -159,9 +159,8 @@
         display: flex;
         flex-direction: column;
 
-        transform: rotate(37.75deg);
 
-
+        transform: rotate(30.75deg) skew(-10deg);
 
 
 
@@ -178,13 +177,14 @@
         display: block;
         position: absolute;
         bottom: -4px;
-        right: -4px;
+        right: -5px;
         width: 250px;
         height: 408px;
         background-image: linear-gradient(to left, #14a1ff , #f53df5 );
         border-radius: 12px;
-        filter: blur(4px);
+        filter: blur(2px);
         z-index: -1;
+        box-shadow: 2px 2px 2px 2px black;
     }
 
 
@@ -192,7 +192,11 @@
 
 .img {
 
-    &__box {
+    &__box img{
+        border-radius: 10px;
+        padding:10px;
+        width: 250px;
+        height: 220px;
 
       }
 
@@ -203,10 +207,29 @@
 
 .text{
     &__box{
+        position: relative;
+        margin-top: 50px;
+        margin-left: -50px;
         color:#bdcadb;
         text-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        z-index: 2;
     }
 
+    &__box::after{
+        content: "";
+        display: block;
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 250px;
+        height: 130px;
+
+        border-radius: 10px;
+        background-image: linear-gradient(to left, #14a1ff , #f53df5 );
+        opacity: 0.7;
+        z-index: -1;
+        box-shadow: 2px 2px 2px 2px black;
+    }
 }
 .name {
 
@@ -214,22 +237,72 @@
     }
 }
 .collections {
+    margin-left: 10px;
+
     color: #bdcadb;
+    padding-bottom: 10px;
 }
 .names {
+    margin-left: 10px;
+
     color: #f0f6ff;
+    padding-bottom: 10px;
+
 }
 
 
 .price {
 
     &__flex {
+        margin-left: 10px;
+        margin-right: 70px;
+        justify-content: space-between;
+        display: flex;
+        gap: 10px;
     }
 }
 .inner {
+    padding: 15px 0px;
+    color: #fff;
+    font-size: 18px;
 }
 .offer {
+    position: relative;
 }
+.offer::after {
+    content: "";
+    position: absolute;
+    display: block;
+}
+
+.logo {
+    position: relative;
+
+    &__img {
+    }
+
+    &__one {
+        position: absolute;
+        display: block;
+        top: 50px;
+        left: -250px
+    }
+
+    &__two {
+        position: absolute;
+        display: block;
+        top: -200px;
+        left: 300px
+    }
+
+    &__three {
+        position: absolute;
+        display: block;
+        top: 50px;
+        left: 400px
+    }
+}
+
 
 
 
