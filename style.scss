@@ -1,10 +1,14 @@
 @import "_zero.scss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
-
+body{
+    overflow-x: hidden;
+}
 .header {
     padding-top: 24px;
     background-color: #21204a;
+
+
 
     &__nav {
         display: flex;
@@ -64,11 +68,11 @@
 
 }
 .container {
+    margin-left: 120px;
+    margin-right: 120px;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
-    max-width: 1440px;
-    padding-left: 120px;
-    padding-right: 120px;
+    max-width: 1200px;
 }
 /* background-image: linear-gradient(250deg, #0698f9 85%, #f906f9 14%);*/
 
@@ -76,7 +80,6 @@
 /* Two PART HEADER======(content)========*/
 
 .header {
-    overflow: hidden;
 
     &__content {
         display: flex;
@@ -298,15 +301,119 @@
     &__three {
         position: absolute;
         display: block;
-        top: 50px;
-        left: 400px
+        top: 70px;
+        left: 500px
     }
 }
 
 
+/* ===============carousel=========== */
+/*================= Sliders bar====================*/
 
 
+.sliders {
 
+    font-family: 'Poppins', sans-serif;
+
+    &__container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    &__bar {
+        margin-top: 150px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bar--left {
+        display: flex;
+        background-color: #fff;
+        p{
+            padding-right: 24px;
+
+            font-size: 35px;
+            font-weight: 600;
+
+            background-image: linear-gradient(to left, #14a1ff , #f53df5 );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &__button--left {
+        width: 144px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        background-color: #cde2fe;
+        color: #476285;
+
+        img{
+            padding-left: 10px;
+        }
+    }
+
+    &__bar--right {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__button--right {
+        border-radius: 12px;
+        border: solid 2px #6692cc;
+        height: 44px;
+        width: 100px;
+        color: #6692cc;
+    }
+
+    &__arrows {
+    }
+}
+
+/*fking sliders*/
+
+.sliders {
+
+    &__content {
+        max-width: 282px;
+        max-height: 500px;
+    }
+
+    &__description {
+    }
+
+    &__names {
+    }
+
+    &__info {
+    }
+
+    &__like {
+    }
+}
+.left {
+
+    &__info {
+    }
+}
+.bright {
+}
+.right {
+
+    &__info {
+    }
+}
+.user {
+
+    &__name {
+    }
+
+    &__like {
+    }
+}
 
 
 

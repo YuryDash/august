@@ -73,6 +73,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .header {
   padding-top: 24px;
   background-color: #21204a;
@@ -138,19 +142,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
+  margin-left: 120px;
+  margin-right: 120px;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
-  max-width: 1440px;
-  padding-left: 120px;
-  padding-right: 120px;
+  max-width: 1200px;
 }
 
 /* background-image: linear-gradient(250deg, #0698f9 85%, #f906f9 14%);*/
 /* Two PART HEADER======(content)========*/
-.header {
-  overflow: hidden;
-}
-
 .header__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,6 +338,86 @@ h1, h2, h3, h4, h5, h6 {
 .logo__three {
   position: absolute;
   display: block;
-  top: 50px;
-  left: 400px;
+  top: 70px;
+  left: 500px;
+}
+
+/* ===============carousel=========== */
+/*================= Sliders bar====================*/
+.sliders {
+  font-family: 'Poppins', sans-serif;
+}
+
+.sliders__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sliders__bar {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sliders__bar--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+}
+
+.sliders__bar--left p {
+  padding-right: 24px;
+  font-size: 35px;
+  font-weight: 600;
+  background-image: -webkit-gradient(linear, right top, left top, from(#14a1ff), to(#f53df5));
+  background-image: linear-gradient(to left, #14a1ff, #f53df5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sliders__button--left {
+  width: 144px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 12px;
+  background-color: #cde2fe;
+  color: #476285;
+}
+
+.sliders__button--left img {
+  padding-left: 10px;
+}
+
+.sliders__bar--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.sliders__button--right {
+  border-radius: 12px;
+  border: solid 2px #6692cc;
+  height: 44px;
+  width: 100px;
+  color: #6692cc;
+}
+
+/*fking sliders*/
+.sliders__content {
+  max-width: 282px;
+  max-height: 500px;
 }
