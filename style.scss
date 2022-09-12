@@ -379,6 +379,7 @@ body{
 
     &__content {
 
+        margin: 10px 10px;
         background-color: #eff1f3;
         border-radius: 20px;
         
@@ -489,6 +490,10 @@ body{
 }
 
 
+.slider-items{
+    padding-bottom: 100px;
+}
+
 /* Слайдер */
 .slick-slider{}
 /* Слайдер запущен */
@@ -506,7 +511,8 @@ body{
 /* Слайд */
 .slick-slide{}
 /* Слайд активный (показывается) */
-.slick-slide.slick-active{}
+.slick-slide.slick-active{
+}
 /* Слайд основной */
 .slick-slide.slick-current{}
 /* Слайд по центру */
@@ -518,40 +524,58 @@ body{
 /* Стрелка не активная */
 .slick-arrow.slick-disabled{}
 /* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-dots li{
+    list-style: none;
+    margin: 0px 10px;
+}
 /* Активная точка */
-.slick-dots li.slick-active{}
+.slick-dots li.slick-active button{
+    background-color: transparent;
+    border: 1px solid #f906f9;
+}
 /* Элемент точки */
-.slick-dots li button{}
+.slick-dots li button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #f906f9;
+    border-radius: 50%;
+}
 
 
 
 /*arrows*/
 
 .slider-items{position: relative;}
-.slider-items .slick-arrow{
-    position: absolute;
-    z-index: 10;
-    top:50%;
-}
 
 /* Стрелка */
-.slick-arrow{
-    font-size: 120px;
-    background-image: url('./IMG/icons/BTNleft.png') 0 0 no-repeat;
-}
-
-/* Стрелка влево */
-.slick-arrow.slick-prev{
-    left:-20px;
-
-}
-/* Стрелка вправо */
-button.slick-arrow.slick-next{
-    right:-20px;
-}
-
+/* Стрелка */
+.slick-arrow {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    font-size:0;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Стрелка влево */
+  .slick-prev {
+    background: url("/IMG/icons/BTNleftNEW.png") 0 0 no-repeat;
+    left: -55px;
+  }
+  
+  /* Стрелка вправо */
+  .slick-next {
+    background: url('/IMG/icons/BTNright.png') 0 0 no-repeat;
+    right: -55px
+  }
+  
 
 
 
